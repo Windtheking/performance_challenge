@@ -36,13 +36,28 @@
       "isAdmin": false
     }
   ],
-  "events": [
+  "Income_Outcome": [
     {
-      "titulo": "tittle",
-      "fecha": "date",
-      "hour": "hour",
-      "description": "description",
-      "id": "1262"
+      "Description": "tittle",
+      "Amount": "hour",
+      "Type": "description",
+      "Category": "1262",
+      "Date": "date",
+      "id": "bffa"
+    }
+  ],
+  "Categories": [
+    {
+      "Food": "Food",
+      "id": "5d24"
+    },
+    {
+      "Services": "Services",
+      "id": "36eb"
+    },
+    {
+      "Indulgences": "Indulgences",
+      "id": "369c"
     }
   ]
 }

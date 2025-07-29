@@ -1,5 +1,5 @@
-const URL_Events = "http://localhost:3000/events"
-import fetchMethods from "./Utilities/fetch.js";
+const URL_Events = "http://localhost:3000/Income_Outcome"
+import fetchMethods from "../Utilities/fetch.js";
 /**
  * Fetch modular functions, exported for global use, modular format to avoid complexity 
  * and to create various methods to do fetching, having post, put, get and delete

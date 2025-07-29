@@ -8,7 +8,6 @@ This project is a custom made database project worked with Riwi company to produ
 - Custom made json db
 - Resources and API-like JS files
 - HTML for rendering JS properties
-- CSS methods for more interesting colors and appearances
 
 ## Folder Organization
 
@@ -16,12 +15,12 @@ The project is organized as follows:
 
 ```plaintext
 project_root/
-├── login.html
 ├── Readme.md
 ├── public/
 │   ├── Banner2.png
 │   ├── Google Icon.png
 │   ├── Large Riwi Icon.png
+│   ├── real_logutout_log_icon_255920 (1).png
 │   └── Short Riwi Icon.png
 ├── src/
 │   ├── json/

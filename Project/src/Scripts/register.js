@@ -63,7 +63,7 @@ document.getElementById("loginForm").addEventListener("submit", async(event) => 
         alert("passwords do not match")
     )
     users_controller.postUsers({nickName , Email , passWordHash, isAdmin})
-    window.location.href = "http://127.0.0.1:5500/Project_root/src/pages/practice_login.html"
+    window.location.href = "http://127.0.0.1:5500/Project/src/pages/practice_login.html"
     return
 });
 

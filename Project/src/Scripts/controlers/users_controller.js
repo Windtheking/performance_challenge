@@ -1,5 +1,5 @@
 const URL_Users = "http://localhost:3000/users"
-import fetchMethods from "./Utilities/fetch.js";
+import fetchMethods from "../Utilities/fetch.js";
 /**
  * Fetch modular functions, exported for global use, modular format to avoid complexity 
  * and to create various methods to do fetching, having post, put, get and delete

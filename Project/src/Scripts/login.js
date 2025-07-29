@@ -1,10 +1,10 @@
 import generateSHA256 from "./Utilities/Hash_generator.js";
 import EmptyFields from "./Utilities/EmptyValidation.js";
 import isEmail from "./Utilities/EmailValidation.js";
-import users_controller from "./users_controller.js";
+import users_controller from "./controlers/users_controller.js";
 
 if (localStorage.getItem("Useremail") !== null) {
-    window.location.href = "http://127.0.0.1:5500/Project_root/src/pages/dashboard.html"
+    window.location.href = "http://127.0.0.1:5500/Project/src/pages/dashboard.html"
 }
 
 
@@ -12,6 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
     event.preventDefault();                                                     //Preventing default behaviour (reolad)
 
     const Email = document.getElementById("Email").value;                           //Recovering DOM values
+    const nickName = document.getElementById("Email").value;                           //Recovering DOM values
     const passWord = document.getElementById("Password").value;                     //Recovering DOM values
 
 
@@ -50,12 +51,13 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
         alert("Unexistent usser or incorrect credentials")
         return;
     }
-
-    const foundNickname = prom.find((user) => user.Email === Email && user.passWordHash === passWordHash)
+    
+   // const prom1 = await users_controller.getUsers()
+  //  const foundNickname = prom1.find((user) => user.nickName === nickName)
 
     localStorage.setItem("Useremail", foundUsser.Email)
 
-    window.location.href = "http://127.0.0.1:5500/Project_root/src/pages/dashboard.html"
+    window.location.href = "http://127.0.0.1:5500/Project/src/pages/dashboard.html"
     
     
 });

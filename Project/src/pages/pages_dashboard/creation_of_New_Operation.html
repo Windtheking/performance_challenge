@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Finanza Pro</h1>
+        </div>
+        <div>
+            <button id = "logoutBtn" type="button"><img src="../../../public/real_logutout_log_icon_255920 (1).png" alt="logout"></button>
+        </div>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>New Operation</h2>
+            <form action="" id="insertionForm">
+                <label for="Description">Description</label>
+                <textarea id="operationDescription" type="text"></textarea>
+                
+                <label for="Amount">Amount</label>
+                <input id="ammoutMoney" type="number" value="0">
+                
+                <label for="Type">Type</label>
+                <select id="typeOf" name="type">
+                    <option value="GAIN">Gain</option>
+                    <option value="LOSS">Loss</option>
+                </select>
+                
+                <label for="Category">Category</label>
+                <select id="identificatorCategory" name="type">
+                    
+                </select>
+
+                <label for="Date">Date</label>
+                <input type="datetime-local">
+            
+            </form>
+        </section>
+    </main>
+    <script type="module" src="../../Scripts/controlers/NewOperationDashboard.js"></script>
+</body>
+</html>
