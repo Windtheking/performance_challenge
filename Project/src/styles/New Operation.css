@@ -15,23 +15,21 @@ main{
     display: flex;
 }
 
-aside{
-    background-image:url("../../public/Banner2.png");
-    background-size: cover;
-    /* background-color: antiquewhite; */
+header{
+    background-color: white;
     border-radius: 30px 0px 0px 30px;;
-    width: 50%;
-    height: 100%;
+    width: 60%;
+    height: 80%;
+    margin-left: 50vh;
+    justify-content: center;
+    align-items: center;
 }
 
 section{
     background-color: white;
     border-radius: 0px 30px 30px 0px;
     width: 35%;
-
-
     padding: 20px;
-
     display: flex;
     flex-direction: column;
 }
@@ -90,6 +88,11 @@ p{
 }
 
 @media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
     main{
         flex-direction: column;
     }
@@ -131,9 +134,9 @@ p{
         padding: 0px ;
     }
 
-    aside{
+    header{
         height: 50%;
-        width: 100%;
+        width: 50%;
         border-radius: 30px 30px 0px 0px;
     }
 }

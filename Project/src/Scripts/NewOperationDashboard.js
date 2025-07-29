@@ -16,16 +16,18 @@ document.getElementById("logoutBtn").addEventListener("click", () =>{
     window.location.href = "http://127.0.0.1:5500/Project/src/pages/practice_login.html"
 });
 
-import category_controller from "./category_controller.js";
+import Income_Outcome_Controller from "./controlers/Income_Outcome_controller.js";
+
 
 const detailedInfo = document.getElementById("operationDescription").value;
 const Money = document.getElementById("ammoutMoney").value;
 const gainOrLoss = document.getElementById("typeOf").value;
 const Category = document.getElementById("identificatorCategory").value;
+const timer = document.getElementById("date_and_time").value;
 
 
 
-const listOfCategories = await category_controller.getCategories();
+const listOfCategories = await Income_Outcome_Controller.getIncome_Outcome();
 const parsedcategories = JSON.stringify(listOfCategories)
 console.log(listOfCategories);
 
@@ -41,7 +43,7 @@ for(const categ of parsedcategories){
 
 document.getElementById("insertionForm").addEventListener("submit", async(event) => {     
         event.preventDefault();
-        //verification of null
+        //verifications
         if (detailedInfo === null){ 
             alert(`Null value detected in password`);
             return;
@@ -50,8 +52,9 @@ document.getElementById("insertionForm").addEventListener("submit", async(event)
             alert(`Null value detected email`); 
             return;
         };
+        if (Money < 0)
         if (gainOrLoss === null){ 
-            alert(`Null value detected in password`);
+            alert(`Non positive numbers not accepted`);
             return;
         };
 
@@ -60,8 +63,8 @@ document.getElementById("insertionForm").addEventListener("submit", async(event)
             return;
         };
 
-        if(EmptyFields({detailedInfo,Money,gainOrLoss,Category})){
-            alert("All domains must be filled")
-            return;
-        };
+        Income_Outcome_Controller.postIncome_Outcome({detailedInfo,Money,gainOrLoss,Category,timer})
+
+
     });
+

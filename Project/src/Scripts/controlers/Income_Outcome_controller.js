@@ -6,24 +6,24 @@ import fetchMethods from "../Utilities/fetch.js";
  */
 
 
-async function getUsers() {
+async function getIncome_Outcome() {
     return await fetchMethods(URL_Events, "GET")
 }
 
 
-async function postUsers(Body) {
+async function postIncome_Outcome(Body) {
     return await fetchMethods(URL_Events, "POST", Body)
 }
 
-async function putUsers(id,  Body) {
+async function putIncome_Outcome(id,  Body) {
     console.log(`URL_Users/${id}`);
 
     return await fetchMethods(`URL_Events/${id}`, "PATCH", Body)
 }
 
-async function deleteUsers(id) {
+async function deleteIncome_Outcome(id) {
     console.log(`URL_Users/${id}`)
     return await fetchMethods(`URL_Events/${id}`, "DELETE")
 }
 
-export default {getUsers,postUsers,putUsers,deleteUsers}
+export default {getIncome_Outcome,postIncome_Outcome,putIncome_Outcome,deleteIncome_Outcome}

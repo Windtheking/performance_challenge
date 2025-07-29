@@ -44,6 +44,14 @@
       "Category": "1262",
       "Date": "date",
       "id": "bffa"
+    },
+    {
+      "id": "a2e2",
+      "detailedInfo": "",
+      "Money": "0",
+      "gainOrLoss": "GAIN",
+      "Category": "",
+      "timer": ""
     }
   ],
   "Categories": [
