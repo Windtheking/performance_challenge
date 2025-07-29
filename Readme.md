@@ -6,8 +6,11 @@
 This project is a custom made database project 
 
 made by: Santiago Andrés Mendoza Almanza
+<br>
 clan: Cayena
+<br>
 Email: 180051946+Windtheking@users.noreply.github.com
+<br>
 ID: 1062961731
 
 worked with Riwi company to produce an evidence of learning and usage of json databases for the consumption of an API. Every piece of this project is a completed code in which you will find the following:
