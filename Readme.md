@@ -3,7 +3,14 @@
 
 ## A Fluidly functioning project for API practicing written in html css and js with json db
 
-This project is a custom made database project worked with Riwi company to produce an evidence of learning and usage of json databases for the consumption of an API. Every piece of this project is a completed code in which you will find the following:
+This project is a custom made database project 
+
+made by: Santiago Andrés Mendoza Almanza
+clan: Cayena
+Email: 180051946+Windtheking@users.noreply.github.com
+ID: 1062961731
+
+worked with Riwi company to produce an evidence of learning and usage of json databases for the consumption of an API. Every piece of this project is a completed code in which you will find the following:
 
 - Custom made json db
 - Resources and API-like JS files
