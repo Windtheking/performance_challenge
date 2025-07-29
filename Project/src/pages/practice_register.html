@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts and stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Import Crypto.js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+      integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles/register1.css">
+    <title>Register.Us</title>
+</head>
+<body>
+    <main>
+        <section id="section1"></section>
+        <section id="section2">
+            <div id = "formBackgrounDiv">
+                <h1>Register</h1>
+                <form action="" id="loginForm">
+                    <label for="Nickname">Nickname</label>
+                    <input type="text" name="Nickname" id="nickName" placeholder="Insert Nickname">
+
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="Email" placeholder="Insert Email">
+                    
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" id="password" placeholder="Insert Password">
+
+                    <label for="ConfirmPassword">ConfirmPassword</label>
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm Password">
+
+                    <button type="submit" class ="">Register</button>
+                </form>
+
+                <div id="1st_div    ">
+                    <p>already have an account? Log in <a href="./practice_login.html">Here</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script type="module" src="../Scripts/register.js"></script>
+</body>
+</html>
